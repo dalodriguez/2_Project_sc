@@ -69,7 +69,7 @@ cellranger mkref \
 
 ---
 
-### Step 2 Aligned, quality control and quantification
+### Step 2 Alignment, quality control and quantification
 
 **Purpose:** Perform the cellranger pipeline
 **Tools:** `cellranger`
