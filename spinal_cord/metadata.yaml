@@ -1,0 +1,8 @@
+paper_title: Spinal Cord Organoids from Human Amniotic Fluid iPSC Recapitulate the Diversity of Cell Phenotypes During Fetal Neural Tube Morphogenesis
+doi: 10.1007/s12035-025-04944-z
+data_source: "Dryad: https://doi.org/10.5061/dryad.4j0zpc8mj"
+domain: single-cell
+ref_genome: GRCh38
+tools: [cellranger-9.0.1, samtools 1.9, python 3.13.5, pandas 1.3.3]
+estimated_runtime_minutes: 120
+estimated_time_for_human: 180

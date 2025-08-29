@@ -1,0 +1,36 @@
+task: >
+  You have been given raw RNA-seq data from *Mycobacterium tuberculosis*
+  cells comparing drug-tolerant persisters to normal growing cells.
+  Using the provided single-end FASTQ files, answer the following.
+
+questions:
+  - id: q1
+    stage: quality_control
+    text: |
+      How many reads has the sample SCO422_S21_L001_R1_001.fastq.gz?
+    answer_type: integer_exact
+    tolerance: 1   
+  - id: q2
+    stage: alignment
+    text: |
+      How many genes does the reference genome contain?
+    answer_type: integer_exact
+    tolerance: 1
+  - id: q3
+    stage: alignment
+    text: |
+      What percentage of reads are mapped confidently to genome?
+    answer_type: numeric_percent
+    tolerance: 1
+  - id: q4
+    stage: dimensionality_reduction
+    text: |
+      What is the contribution of PC1 to the overall variance in the data?
+    answer_type: integer_exact
+    tolerance: 1     
+  - id: q5
+    stage: quantification
+    text: |
+      How many cells were detected after filtering in the feature-barcode matrix?
+    answer_type: integer_exact
+    tolerance: 5     
