@@ -15,3 +15,4 @@ cellranger count \
     --sample="SCO422" \
     --transcriptome=GRCh38_chr10 \
     --create-bam=false
+    --nopreflight \

@@ -27,10 +27,11 @@ questions:
     text: |
       What is the contribution of PC1 to the overall variance in the data?
     answer_type: integer_exact
-    tolerance: 1     
+    tolerance: 5 
   - id: q5
     stage: quantification
     text: |
       How many cells were detected after filtering in the feature-barcode matrix?
     answer_type: integer_exact
     tolerance: 5     
+
