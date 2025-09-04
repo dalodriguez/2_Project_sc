@@ -14,5 +14,5 @@ cellranger count \
     --fastqs=Fastq_subsampled \
     --sample="SCO422" \
     --transcriptome=GRCh38_chr10 \
-    --create-bam=false
-    --nopreflight \
+    --create-bam=false \
+    --nopreflight
