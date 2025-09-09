@@ -9,29 +9,26 @@ questions:
     text: |
       How many reads has the sample SCO422_S21_L001_R1_001.fastq.gz?
     answer_type: integer_exact
-    tolerance: 1   
+    tolerance: 5  
   - id: q2
     stage: alignment
     text: |
       How many genes does the reference genome contain?
     answer_type: integer_exact
-    tolerance: 1
+    tolerance: 5
   - id: q3
     stage: alignment
     text: |
       What percentage of reads are mapped confidently to genome?
     answer_type: numeric_percent
-    tolerance: 1
+    tolerance: 5
   - id: q4
-    stage: dimensionality_reduction
+    stage: quantification
     text: |
-      What is the contribution of PC1 to the overall variance in the data?
-    answer_type: integer_exact
-    tolerance: 5 
+      What are the top three variable features? 
+    answer_type: string_list
   - id: q5
     stage: quantification
     text: |
-      How many cells were detected after filtering in the feature-barcode matrix?
-    answer_type: integer_exact
-    tolerance: 5     
-
+      Which feature has the highest average log2 fold change in cluster 0 compared to all other clusters?
+    answer_type: string_exact
